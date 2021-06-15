@@ -13,3 +13,6 @@ multiple file to add modified area
 git checkout index.html ->this commande changethe file last coomit
  use to last commit
  git checkout -f -> change the multiple file with last commit
+git log -> commande tell me all commit details past time
+ git log -p -2 -> this commande tells me what change 
+ last files and who change 
