@@ -10,3 +10,6 @@ git commit ->commit the file add tostaging area to modified area
 
 git commit -m "passed the message "->
 multiple file to add modified area
+git checkout index.html ->this commande changethe file last coomit
+ use to last commit
+ git checkout -f -> change the multiple file with last commit
