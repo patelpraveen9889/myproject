@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midia</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:sans-serif;
+            font-size:x-large;
+        
+        }
+
+        ul{margin-top: 10px;
+            width: max-content;
+            float: left;
+
+            color: azure;
+            position: relative;
+            background-color: rgba(20, 10, 10, 0.459);
+        }
+        ul > li{
+        display: inline;
+            padding: 5px;
+            margin-left: 4px;
+        }
+        nav{
+            background-color: aquamarine;
+        }
+          form > input{
+            float: right;
+        }
+        body{
+            background-color: rgba(45, 143, 78, 0.562);
+        }
+        .p1{
+background-color: aquamarine;
+width: 45%;
+height: auto;
+float:left;
+margin: 10px;
+border: 2px solid  rgb(1, 22, 10);
+        }
+        .p2{
+            border: 2px solid  rgb(1, 22, 10);
+background-color: rgba(26, 46, 46, 0.815);
+width: 45%;
+float: left;
+color: antiquewhite;
+height:auto;
+margin: 10px;
+        }
+        @media screen  and (max-width:500px){
+            body{
+                background-color: blueviolet;
+                float: right;
+            }
+        }
+        
+            @media screen  and (max-width:500px){ .p1{
+float: none;
+width: 100%;
+        }
+    }
+        @media screen  and (max-width:500px){  .p2{
+          float: none;
+          width: 100%;  
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <nav><ul>
+        <li>home</li>
+        <li>about us</li>
+        <li>services</li>
+        <li>contract me</li>
+        <li>register</li>
+        <li>login</li>
+        
+
+    </ul> 
+    <form action=""><input type="text" placeholder="search"></form>
+</nav>
+    
+    <div style="margin-top: 15px;"> 
+    <div class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium a, facere est ea ex, debitis quia dolorem laboriosam laborum ipsum mollitia cum necessitatibus quod dicta voluptates minus nemo aperiam earum nobis rerum temporibus facilis reiciendis! Qui voluptas possimus magni, excepturi, molestiae explicabo quibusdam ipsum obcaecati ab porro dicta voluptates repellendus nobis amet aperiam, placeat tenetur provident error a natus doloremque blanditiis est nam? Iste vitae vel, possimus, voluptate distinctio cum, pariatur earum aliquam neque nulla aspernatur alias perspiciatis!</div>
+     <div class="p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt illum harum itaque, necessitatibus nam ipsum amet optio expedita adipisci exercitationem. Sed, aperiam explicabo placeat optio, quas natus harum inventore iusto soluta repellat obcaecati, laudantium incidunt ipsum rerum? Corrupti quam, ut modi eius explicabo saepe dolore facere aperiam, minima ipsam excepturi nam voluptatem delectus officia animi ea provident perferendis amet voluptatum dolorum. Minus voluptate harum ratione vero doloremque.</div>
+    </div>
+    </body>
+</html>
