@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .drop{
+display: inline-block;
+position: relative;
+    }
+   .dpcontent{
+display: none;
+position:absolute;
+background-color: rgb(9, 245, 245);
+min-width: 178px;
+padding: 3px,6px;
+z-index: 1;
+box-shadow: 0px 3px 7px 8px grey;
+color: blue;
+   } 
+
+   .drop:hover .dpcontent {
+display: block;
+   }
+    
+    </style>
+</head>
+<body style="text-align: center;">
+    <p> dropdowm example</p>
+    <div class="drop">
+        <span>mouseover</span>
+        <div class="dpcontent">
+            <p>hello dropdown</p>
+            <ul><li>home</li>
+            <li>about</li>
+           <li>contract</li></ul>
+           <img src="bholu.jpg" alt="hani" style="width:100px;height: 100px;">
+        </div>
+    </div>
+    
+</body>

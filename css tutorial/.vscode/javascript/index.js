@@ -1,0 +1,12 @@
+ var { log ,set} = require('./Log.js');
+ const module1 = require("./cat");
+ let {cal,param,num} = require("./math");
+ log.error('nodejs start');
+ set();
+ console.log(module1.add(10,19));
+ console.log(module1.multiply(10,19));
+ console.log(module1.sutract(45,19));
+ console.log( cal());
+ console.log( param());
+ console.log( num);
+console.log('my name');

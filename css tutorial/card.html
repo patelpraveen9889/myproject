@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:content-box;
+            font-family: sans-serif;
+        }
+        body{
+            background: linear-gradient(90deg,rgb(3, 32, 87)  ,rgb(5, 104, 129));
+        }
+        .card{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left:30%;
+            box-shadow: 15px 15px 30px 15px rgb(48, 9, 49);
+            background:linear-gradient(rgb(123, 142, 151),rgb(187, 187, 141));
+ 
+        }
+         .card >.header{
+           color: white;
+            text-align: center;
+             padding: 15px;
+            width: 270px;
+             font-size: 4em;
+           height: 220px;
+           background: rgb(2, 63, 2);
+           font-weight: 1800;
+           text-transform: capitalize;
+    
+        
+        }
+        .text{
+            text-align: center;
+            color: rgb(2, 2, 2);
+            padding: 10px;
+            font-size: 18px;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: 900;
+            box-shadow: inset -15px -15px 20px 55px rgba(6, 82, 105, 0.116);
+             
+        }
+    </style>
+</head>
+<body>
+   <h1>  card example</h1> 
+
+   <div class="card">
+       <div class="header"><h4 id="t">18</h2>
+    <h6 id="day">saturday</h6></div>
+       <div class="text"><p id="cal">June 18 , 2021</p></div>
+   </div>
+   <script>
+        function mt(){
+            const d = new Date();
+       const months =["january","fabuary","march","april","may","june","julay","august","septempber","october","november","december"];
+        
+        const days = ["sunday","monday","tuesday","wednesday","thursday","firday","saturday"];
+        
+        const  h = d.getHours();
+        const  m = d.getMinutes();
+        const   s = d.getSeconds();
+
+        document.getElementById("t").innerHTML = h+":"+m +":"+s;
+       document.getElementById("day").innerHTML = days[d.getDay()];
+       document.getElementById("cal").innerHTML = d.getDate()+" "+months[d.getMonth()] +" " + d.getFullYear();
+        }
+        
+        const df = setInterval(mt ,1000);
+   </script>
+   
+</body>
+</html>
